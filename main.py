@@ -16,11 +16,11 @@ def main() -> None:
     event_handler = EventHandler()
 
     player = Entity(40,25,"@",(255,255,255))
-    npc = Entity(35,20,"g",(255,0,0))
+    npc = Entity(35,20,"I",(255,0,0))
     entities = {player,npc}
     engine = engine(entities,event_handler,player)
 
-    with tcod.context.new_terminal(screen_width,screen_height,tileset=tileset,title="Lake",) as context:
+    with tcod.context.new_terminal(screen_width,screen_height,tileset=tileset,title="Lake-Adventure",) as context:
 
         root_console = tcod.console.Console(screen_width, screen_height, order="F")
 
